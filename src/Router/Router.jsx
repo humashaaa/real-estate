@@ -3,6 +3,10 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Details from "../Components/Details";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -11,7 +15,13 @@ const router = createBrowserRouter([
       children:[
         {
             path: '/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader: ()=> fetch('/estate.json'),
+        },
+        {
+            path: '/villa/:id',
+            element:<PrivateRoute><Details></Details></PrivateRoute>,
+            loader: ()=> fetch('/estate.json'),
         },
         {
             path: '/login',
@@ -20,6 +30,14 @@ const router = createBrowserRouter([
         {
             path: '/register',
             element:<Register></Register>
+        },
+        {
+            path: '/about',
+            element:<About></About>
+        },
+        {
+            path: '/contact',
+            element:<Contact></Contact>
         },
       ]
      },

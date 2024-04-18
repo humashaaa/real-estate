@@ -1,0 +1,76 @@
+ [
+      {
+        "image": "https://i.ibb.co/v1VCnYB/roberto-nickson-YG2-Mys-Gb-T-M-unsplash.jpg",
+        "estate_title": "Luxury Beachfront Villa",
+        "id": "1",
+        "segment_name": "Villas",
+        "description": "A magnificent villa with direct beach access, panoramic views, and modern amenities.",
+        "price": "$6,500,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Maui, Hawaii",
+        "facilities": ["Infinity Pool", "Private Beach", "Spa", "Gym"]
+      },
+      {
+        "image": "https://i.ibb.co/R79gXyq/dinuka-lankaloka-pm3v-Gg-Dnb3o-unsplash.jpg",
+        "estate_title": "Exclusive Island Retreat",
+        "id": "2",
+        "segment_name": "Private Islands",
+        "description": "An exclusive island retreat with lush vegetation, secluded beaches, and luxury accommodations.",
+        "price": "$15,000,000",
+        "status": "sale",
+        "area": "50 acres",
+        "location": "Bora Bora",
+        "facilities": ["Beachfront Villas", "Helipad", "Marina", "Tennis Courts"]
+      },
+      {
+        "image": "https://i.ibb.co/JytCzKF/francesca-tosolini-t-Hk-JAMc-O3-QE-unsplash.jpg",
+        "estate_title": "Skyline Penthouse",
+        "id": "3",
+        "segment_name": "Penthouses",
+        "description": "A luxurious penthouse offering breathtaking city views, spacious interiors, and top-notch amenities.",
+        "price": "$4,200,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "New York City, NY",
+        "facilities": ["Rooftop Pool", "Gourmet Kitchen", "Home Theater", "Concierge Service"]
+      },
+      {
+        "image": "https://i.ibb.co/jbxkrr4/arkady-lukashov-ys-N7dkne160-unsplash.jpg",
+        "estate_title": "Exotic Resort Getaway",
+        "id": "4",
+        "segment_name": "Resorts",
+        "description": "An exotic resort nestled in tropical surroundings, offering luxurious accommodations and world-class facilities.",
+        "price": "$12,000,000",
+        "status": "sale",
+        "area": "20 acres",
+        "location": "Maldives",
+        "facilities": ["Beachfront Villas", "Spa & Wellness Center", "Infinity Pool", "Fine Dining Restaurants"]
+      },
+      {
+        "image": "https://i.ibb.co/gmRf7cg/r-architecture-2g-Dwl-Iim3-Uw-unsplash.jpg",
+        "estate_title": "Stunning Hilltop Mansion",
+        "id": "5",
+        "segment_name": "Mansions",
+        "description": "A stunning mansion perched on a hilltop, boasting expansive views, luxurious interiors, and vast outdoor spaces.",
+        "price": "$10,800,000",
+        "status": "sale",
+        "area": "8000 sq ft",
+        "location": "Los Angeles, CA",
+        "facilities": ["Home Theater", "Wine Cellar", "Swimming Pool", "Tennis Court"]
+      },
+      {
+        "image": "https://i.ibb.co/HgGpBkX/dan-gold-4-HG3-Ca3-Ez-Ww-unsplash.jpg",
+        "estate_title": "Modern Beachfront Condo",
+        "id": "6",
+        "segment_name": "Beachfront Properties",
+        "description": "A modern condo with breathtaking ocean views, spacious balconies, and resort-style amenities.",
+        "price": "$2,000,000",
+        "status": "rent",
+        "area": "2000 sq ft",
+        "location": "Miami Beach, FL",
+        "facilities": ["Direct Beach Access", "Fitness Center", "Outdoor BBQ Area", "24/7 Security"]
+      }
+    ]
+  
+  
