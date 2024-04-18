@@ -2,9 +2,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import UseHooks from "../Hooks/UseHooks";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
 
 const Login = () => {
-    const {signInUser, googleLogin, githubLogin}= UseHooks()
+    const {signInUser, googleLogin, githubLogin, createUser}= UseHooks()
+    const [loginUser, setLoginUser] = useState(null)
+
     
     const location = useLocation()
     const navigate= useNavigate()
@@ -110,6 +113,14 @@ const Login = () => {
 		
 	</form>
 </div>
+{/* {loginUser && (
+          <div className="flex justify-center items-center gap-3">
+            <img className="rounded-full" src={loginUser?.photoURL} alt="" />
+            <h3 className="font-semibold text-xl">
+              user name : {loginUser?.displayName}
+            </h3>
+          </div>
+        )} */}
 </div>
        </div>
     );

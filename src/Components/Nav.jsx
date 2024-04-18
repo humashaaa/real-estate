@@ -48,6 +48,8 @@ const Nav = () => {
   {
     user?
     <div className="navbar-end">
+      <img className= "rounded-full " src={user.photoURL} alt="" />
+      {/* <span>{user.photoURL}</span> */}
     <button onClick={handleSignOut} className="btn btn-ghost font-bold">Sign Out</button></div>:
     <div className="navbar-end">
     <NavLink to='/login' className="font-bold">Log in</NavLink>
