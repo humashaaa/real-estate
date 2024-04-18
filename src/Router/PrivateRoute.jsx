@@ -5,7 +5,7 @@ const PrivateRoute = ({children}) => {
     const {user, loading}= UseHooks()
     const location = useLocation()
     if(loading){
-        return <span className="loading flex justify-center items-center loading-lg loading-infinity"></span>
+        return <span className="loading flex justify-center items-center loading-lg md:min-h-72 md:min-w-64 loading-infinity"></span>
     }
 
     if(!user){

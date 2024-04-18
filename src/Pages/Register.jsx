@@ -2,32 +2,78 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import UseHooks from "../Hooks/UseHooks";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-    const {createUser} = UseHooks()
+    const {createUser, updateUserProfile} = UseHooks()
     console.log(createUser);
+    const [registeredError, setregisteredError] = useState('')
 
 
     const location = useLocation()
     const navigate= useNavigate()
     const form = location?.state || '/'
+    
 
-    const {
-        register, handleSubmit, formState: { errors }} = useForm();
+    const {register, handleSubmit, formState: { errors }} = useForm();
       const onSubmit = data => {
-        const {email, password} = data;
-        createUser(email, password)
-          .then(result => {
-            if(result.user){
-              navigate(form)
-            }
+        const {email, password, image, fullName} = data;
 
+
+
+
+        
+      
+
+
+
+
+
+
+
+
+
+
+        // if(password.length <6){
+        //   setregisteredError('password should be atleast 6 charecters or longer')
+        //   return
+        // }
+
+        // setSuccess('')
+
+        // create user and update profile
+        createUser(email, password)
+          .then(() => {
+            // setSuccess('created user successfully')
+            updateUserProfile(image, fullName)
+            .then(()=>{
+              navigate(form)
+                })
+            
   })
 //   .catch((error) => {
 //     const errorMessage = error.message;
     
 //   });
+
+
       };
+
+      const validation = (value) => {
+        if (!value) return "this field is required";
+        if (value.length < 6) return "Password must be at least 6 characters long";
+        if (!/[A-Z]/.test(value)) return "Password must contain at least one uppercase letter";
+        if (!/[a-z]/.test(value)) return "Password must contain at least one lowercase letter";
+        return true;
+      };
+
+     const handleSuccess = ()=>{
+      toast('user created successfully')
+
+     }
+  
      
     
     return (
@@ -70,16 +116,25 @@ const Register = () => {
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input {...register("password", { required: true })} type="password" placeholder="password" className="input input-bordered"  />
-          {errors.password && <span className="text-sm text-red-500">This field is required</span>}
+          <input {...register("password", { validate: validation})} type="password" placeholder="password" className="input input-bordered"  />
+          {errors.password && <p className="text-sm text-red-500">{errors.password.message}</p>}
+
+          {/* {errors.password && <span className="text-sm text-red-500">This field is required</span>}
+          {errors.password && errors.password.type === 'minLength' && (
+        <p className="text-sm text-red-500">Password must be at least 6 characters long.</p>
+      )} */}
           
         </div>
         
         <div className="form-control mt-6">
-          <button className="btn btn-primary bg-green-500 border-none text-white">Register</button>
+          <button type="submit" onClick={handleSuccess} className="btn btn-primary bg-green-500 border-none text-white">Register</button>
+          <ToastContainer />
         </div>
         <p>Already have an account? <Link className="text-blue-500 underline" to='/login'>Log in</Link></p>
       </form>
+      {/* {
+        success && <p>{success}</p>
+      } */}
     </div>
   </div>
 </div>
