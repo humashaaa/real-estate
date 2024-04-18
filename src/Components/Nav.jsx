@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import UseHooks from "../Hooks/UseHooks";
+import { HiOutlineHome } from "react-icons/hi";
 
 const Nav = () => {
   const {logOut, user}= UseHooks()
@@ -18,10 +19,12 @@ const Nav = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         </ul>
         </div>
-    <a className="btn btn-ghost text-xl flex gap-0">Azure<span className="text-green-500">Horizon</span></a>
+      
+
+<a className="btn btn-ghost text-xl flex gap-0">Azure<span className="text-green-500">Horizon</span></a>
   </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+  <div className="navbar-center flex ">
+    <ul className="menu menu-horizontal px-1 flex gap-9 items-center ">
     <NavLink to='/' className={({ isActive }) => isActive ? "text-green-600 border-green-400 border-2 font-bold rounded-lg sm:p-1 md:p-2" : "font-bold"
   }>Home</NavLink>
 

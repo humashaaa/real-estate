@@ -1,16 +1,16 @@
 import { CiPhone } from "react-icons/ci";
-import { FaMapMarkerAlt } from "react-icons/fa";
+// import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
     return (
         <div>
-            <div>
-                <h1>IT’S EASY TO FIND US</h1>
+            <div className="space-y-4 mt-14 text-center mb-9">
+                <h1 className="font-bold text-2xl">IT’S EASY TO FIND US</h1>
                 <p>We're here to assist you every step of the way. Whether you have questions about our properties, need assistance with booking, or simply want to learn more about the AzureHorizon experience, our dedicated team is ready to help. Reach out to us via phone, email, or the contact form below, and one of our friendly representatives will be in touch promptly. Your satisfaction is our priority, and we look forward to providing you with personalized assistance to ensure your AzureHorizon journey is nothing short of extraordinary.</p>
             </div>
-            <div className="flex justify-around">
+            <div className="flex justify-around mt-24 mb-16">
                 <div className="flex items-center">
                     <FiMapPin className="bg-green-400 w-11 h-11 rounded-full p-2" />
                     <div>
