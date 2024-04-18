@@ -19,26 +19,13 @@ import img6 from '../assets/dinuka-lankaloka-pm3vGgDnb3o-unsplash.jpg'
 
 
 
-// Import Swiper React components
 
-// Import Swiper styles
-// import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
-// import 'swiper/css/thumbs';
 
-
-// import required modules
-// import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 
 
 const Swipper = () => {
-
-    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-
-
-
 
 
     return (
@@ -48,19 +35,8 @@ const Swipper = () => {
 navigation={true} 
 modules={[Navigation]}
 
-
-
-
-        //   style={{
-        //     '--swiper-navigation-color': '#fff',
-        //     '--swiper-pagination-color': '#fff',
-        //   }}
           loop={true}
-        //   spaceBetween={10}
-        //   navigation={true}
-        //   thumbs={{ swiper: thumbsSwiper }}
-        //   modules={[ FreeMode, Navigation, Thumbs]}
-        //   className="mySwiper2"
+        
         >
           <SwiperSlide>
             <img className="w-2/3 h-96 mx-auto" src={img1} />
@@ -82,36 +58,7 @@ modules={[Navigation]}
           </SwiperSlide>
           
         </Swiper>
-        {/* <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={true}
-          spaceBetween={10}
-          slidesPerView={4}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img src={img1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img5} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={img6} />
-          </SwiperSlide>
-         
-        </Swiper> */}
+       
       </div>
     );
 };

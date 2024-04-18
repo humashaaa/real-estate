@@ -24,28 +24,7 @@ const Register = () => {
         const {email, password, image, fullName} = data;
 
 
-
-
         
-      
-
-
-
-
-
-
-
-
-
-
-        // if(password.length <6){
-        //   setregisteredError('password should be atleast 6 charecters or longer')
-        //   return
-        // }
-
-        // setSuccess('')
-
-        // create user and update profile
         createUser(email, password)
           .then(() => {
             // setSuccess('created user successfully')
@@ -55,10 +34,6 @@ const Register = () => {
                 })
             
   })
-//   .catch((error) => {
-//     const errorMessage = error.message;
-    
-//   });
 
 
       };
@@ -134,10 +109,7 @@ const Register = () => {
 
           {errors.password && <p className="text-sm text-red-500">{errors.password.message}</p>}
 
-          {/* {errors.password && <span className="text-sm text-red-500">This field is required</span>}
-          {errors.password && errors.password.type === 'minLength' && (
-        <p className="text-sm text-red-500">Password must be at least 6 characters long.</p>
-      )} */}
+         
           
         </div>
         
@@ -147,9 +119,7 @@ const Register = () => {
         </div>
         <p>Already have an account? <Link className="text-blue-500 underline" to='/login'>Log in</Link></p>
       </form>
-      {/* {
-        success && <p>{success}</p>
-      } */}
+     
     </div>
 
     

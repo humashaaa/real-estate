@@ -38,8 +38,7 @@ const Nav = () => {
     <NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-600 border-green-400 border-2 font-bold rounded-lg sm:p-1 md:p-2" : "font-bold"
   }>Contact Us</NavLink>
     
-    {/* <NavLink to='/login' className={({ isActive }) => isActive ? "text-green-600 border-green-400 border-2 font-bold rounded-lg sm:p-1 md:p-2" : "font-bold"
-  }>Log in</NavLink> */}
+   
 
     <NavLink to='/register' className={({ isActive }) => isActive ? "text-green-600 border-green-400 border-2 font-bold rounded-lg sm:p-1 md:p-2" : "font-bold"
   }>Register</NavLink>

@@ -17,8 +17,7 @@ const Login = () => {
         const {email, password} = data;
         signInUser(email, password)
           .then(result => {
-            // console.log(result)
-            // navigate(location.state ? location.state : '/')
+            
             if(result.user){
               navigate(form)
             }
@@ -36,10 +35,6 @@ const Login = () => {
           }
         })
       }
-
-
-
-
 
     
     return (
@@ -77,18 +72,11 @@ const Login = () => {
 	</div>
 
 
-
-
-
 	<div className="flex items-center w-full my-4">
 		<hr  className="w-full dark:text-gray-600" />
 		<p className="px-3 dark:text-gray-600">OR</p>
 		<hr  className="w-full dark:text-gray-600" />
 	</div>
-
-
-
-
 
 	
       <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -113,14 +101,7 @@ const Login = () => {
 		
 	</form>
 </div>
-{/* {loginUser && (
-          <div className="flex justify-center items-center gap-3">
-            <img className="rounded-full" src={loginUser?.photoURL} alt="" />
-            <h3 className="font-semibold text-xl">
-              user name : {loginUser?.displayName}
-            </h3>
-          </div>
-        )} */}
+
 </div>
        </div>
     );
