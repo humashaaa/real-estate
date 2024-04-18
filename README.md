@@ -1,8 +1,19 @@
-# React + Vite
+# More about AzureHorizon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features:
+* Exclusive Properties: Explore our curated collection of luxurious penthouses, villas, and private islands, each offering unparalleled elegance and sophistication.
 
-Currently, two official plugins are available:
+* Breathtaking Views: Enjoy panoramic vistas from our penthouses, waterfront villas, and secluded private islands, providing a picturesque backdrop for luxurious living.
+* Customized Amenities: Experience bespoke amenities tailored to your desires, from state-of-the-art facilities to personalized concierge services, ensuring a lifestyle of utmost comfort and convenience.
+* Secluded Retreats: Escape to your own private oasis with our secluded villas and private islands, offering a sanctuary of tranquility away from the hustle and bustle of everyday life.
+* Unmatched Luxury: Immerse yourself in the epitome of luxury living with our meticulously designed properties, crafted to exceed the expectations of even the most discerning clientele.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## npm packages used for this website:
+* AOS Package,
+* React Hook form,
+* Swiper slider
+
+---
+# visit us here:
+## [AzureHorizon]()
