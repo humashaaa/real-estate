@@ -1,12 +1,16 @@
 import { useLoaderData } from "react-router-dom";
 import Villa from "../Components/Villa";
 import Swipper from "../Components/Swipper";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const villas = useLoaderData()
-    console.log(villas);
+    // console.log(villas);
     return (
         <div>
+            <Helmet>
+                <title>AzureHorizon | Home</title>
+            </Helmet>
 
             <div className="space-y-7 mt-16 p-8">
                 <h1 className="font-bold text-3xl text-center">Discover Your Dream Lifestyle with AzureHorizon Real Estate</h1>

@@ -1,7 +1,13 @@
+import { Helmet } from 'react-helmet-async';
 import banner from '../assets/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv.jpg'
+import AosPackage from '../Components/AosPackage'
 const About = () => {
     return (
         <div>
+			<Helmet>
+                <title>AzureHorizon | About Us</title>
+            </Helmet>
+
             <div className='m-6 p-6 space-y-6'>
                 <h1 className='font-bold text-3xl text-center'>WELCOME TO AZURE<span className="text-green-500">HORIZON</span></h1>
                 <p>Indulge in the epitome of luxury with AzureHorizon's exquisite collection of villas, penthouses, private islands, beachfront properties and resorts. Our villas offer a private sanctuary amidst stunning landscapes, featuring spacious interiors, lush gardens, and personalized services to ensure an unforgettable stay. Elevate your experience with our meticulously crafted penthouses, boasting unparalleled views and exclusive amenities that redefine luxury living. For those seeking ultimate relaxation and adventure, our resorts beckon with world-class facilities, pristine beaches, and a wealth of activities to delight every guest. Discover the pinnacle of hospitality with AzureHorizon – where every moment is an enchanting escape.</p>
@@ -9,6 +15,13 @@ const About = () => {
             <div className='flex justify-center'>
                 <img className='h-96 w-2/3' src={banner} alt="" />
             </div>
+
+
+			<AosPackage></AosPackage>
+
+
+
+
             {/* faq */}
             
             <section className="dark:bg-gray-100 dark:text-gray-800">

@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import UseHooks from "../Hooks/UseHooks";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const {createUser} = UseHooks()
@@ -31,6 +32,10 @@ const Register = () => {
     
     return (
         <div className="hero min-h-screen bg-base-200">
+          <Helmet>
+                <title>AzureHorizon | Register</title>
+            </Helmet>
+
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Register now!</h1>

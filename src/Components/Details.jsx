@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FiMapPin } from "react-icons/fi";
 import { SiTicktick } from "react-icons/si";
 import { useLoaderData, useParams } from "react-router-dom";
@@ -10,6 +11,10 @@ const Details = () => {
     const {image, estate_title, segment_name, description, price, status, area, location, facilities} = villaId
     return (
        <div className="p-11 mt-16">
+        <Helmet>
+                <title>{estate_title}</title>
+            </Helmet>
+
         
         <div className="flex  gap-4 items-center">
         <div>
