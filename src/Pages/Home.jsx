@@ -24,7 +24,7 @@ const Home = () => {
 
             <h1 className="font-bold text-2xl mt-28 text-center mb-16">Discover your perfect property</h1>
           {/* villa contaiuner */}
-          <div className="grid grid-cols-3 gap-9 space-x-5 p-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-9 md:gap-5 gap-3 space-x-5 p-1 lg:p-10">
          {
               villas.map(villa=> <Villa key={villa.id} villa={villa}>
 

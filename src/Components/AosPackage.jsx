@@ -15,7 +15,7 @@ const AosPackage = () => {
 
 
     return (
-        <div className='flex p-6 gap-8 items-center justify-around mt-24'>
+        <div className='flex flex-col md:flex-row p-3 md:p-6 md:gap-8 gap-5 items-center justify-around mt-24'>
             {/* card 1 */}
 
             <div className="card w-80 bg-base-100 shadow-xl" data-aos = "fade-down">

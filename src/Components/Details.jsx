@@ -16,7 +16,7 @@ const Details = () => {
             </Helmet>
 
         
-        <div className="flex  gap-4 items-center">
+        <div className="flex md:flex-row flex-col  gap-4 items-center">
         <div>
           <img className="w-full h-96 bg-cover relative rounded-xl" src={image} alt="" />
           <button className="btn bg-red-500 border-none text-white absolute top-44">{status}</button>

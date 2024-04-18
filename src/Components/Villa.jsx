@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Villa = ({villa}) => {
     const {image, estate_title, id, segment_name, description, price, status, area, location, facilities} = villa
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-80 md:w-96 bg-base-100 shadow-xl">
   <figure><img className="h-80 w-full bg-cover" src= {image} alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">{estate_title}</h2>

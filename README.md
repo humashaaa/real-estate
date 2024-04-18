@@ -10,9 +10,9 @@
 
 
 ## npm packages used for this website:
-* AOS Package,
-* React Hook form,
-* Swiper slider
+* [AOS Package](https://www.npmjs.com/package/aos),
+* [React Hook form,](https://react-hook-form.com/)
+* [Swiper slider](https://swiperjs.com/)
 
 ---
 # visit us here:
